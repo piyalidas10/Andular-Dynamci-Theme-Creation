@@ -1,0 +1,97 @@
+/* You can add global styles to this file, and also import other style files */
+$headerBackColor: var(--header-back-color);
+$headerTxtColor: var(--header-text-color);
+$primaryColor: var(--primary-color);
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.header{
+    background: $headerBackColor;
+    border: 0;
+    margin-bottom: 0;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    .container {
+        padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .navbar-brand{
+        font-size: 40px;
+        color: $headerTxtColor;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        padding-top: 0;
+        padding-bottom: 0;
+        line-height: 62px;
+        margin-right: 45px;
+        width: 133px;
+    }
+    ul {
+        display: flex;
+        flex: 1 1;
+        flex-wrap: wrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        a{
+            line-height: 62px;
+            font-size: 1.077rem;
+            padding: 0 18px;
+            outline: 0;
+            color: $headerTxtColor;
+        }
+    }
+}
+.navbar {
+    background: $primaryColor;
+    ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        a{
+            font-size: 1.308rem;
+            font-weight: 500;
+            line-height: 54px;
+            min-width: 120px;
+            padding: 0 17px;
+            text-align: center;
+            border-radius: 3px 3px 0 0;
+            color: #fff;
+            -webkit-transition: color .12s ease-in-out;
+            transition: color .12s ease-in-out;
+        }
+    }
+}
